@@ -1,15 +1,15 @@
 # mailstorepermissions
 
-![Screenshot](/images/screenshot.png)
+CiviCRM sets `0700` permissions on mail, but this is not always appropriate. I needed `02770`.
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+This extension uses the [patchwork extension](https://github.com/artfulrobot/patchwork) to maintain a patch on the core file `CRM/Mailing/MailStore.php`.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
-* PHP v5.4+
-* CiviCRM (*FIXME: Version number*)
+* PHP v7.0+
+* CiviCRM 5.0
 
 ## Installation (Web UI)
 
@@ -22,7 +22,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl mailstorepermissions@https://github.com/FIXME/mailstorepermissions/archive/master.zip
+cv dl mailstorepermissions@https://github.com/artfulrobot/mailstorepermissions/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,14 +31,6 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/mailstorepermissions.git
+git clone https://github.com/artfulrobot/mailstorepermissions.git
 cv en mailstorepermissions
 ```
-
-## Usage
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
