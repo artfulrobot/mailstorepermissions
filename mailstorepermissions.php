@@ -137,7 +137,7 @@ function mailstorepermissions_civicrm_entityTypes(&$entityTypes) {
 /**
  * Patch the Mailstore class.
  */
-function patchwork_patchwork_apply_patch($file, &$code) {
+function mailstorepermissions_patchwork_apply_patch($file, &$code) {
   if ($file === '/CRM/Mailing/MailStore.php') {
     $code = str_replace(
       'if (!mkdir($dir . DIRECTORY_SEPARATOR . $sub, 0700, TRUE)) {',
